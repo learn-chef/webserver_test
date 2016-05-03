@@ -1,0 +1,21 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_zero
+
+verifier:
+  name: inspec
+
+platforms:
+  - name: centos-7.2
+    driver:
+      customize:
+        memory: 256
+
+suites:
+  - name: default
+    run_list:
+      - recipe[webserver_test::default]
+    attributes:
