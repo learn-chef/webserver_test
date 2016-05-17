@@ -1,0 +1,3 @@
+Style/IndentationWidth:
+  # Number of spaces for each indentation level.
+  Width: 4
