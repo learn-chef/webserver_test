@@ -6,9 +6,9 @@
 require 'spec_helper'
 
 describe 'webserver_test::default' do
-  context 'when run on CentOS 7.2.1511' do
+  context 'when run on CentOS 7.3.1611' do
     let(:chef_run) do
-      runner = ChefSpec::ServerRunner.new(platform: 'centos', version: '7.2.1511')
+      runner = ChefSpec::ServerRunner.new(platform: 'centos', version: '7.3.1611')
       runner.converge(described_recipe)
     end
 
@@ -82,7 +82,7 @@ end
 #
 # describe 'webserver_test::default' do
 #   platforms = {
-#     'centos' => ['7.2.1511', 'httpd', 'httpd'],
+#     'centos' => ['7.3.1611', 'httpd', 'httpd'],
 #     'ubuntu' => ['14.04', 'apache2', 'apache2']
 #   }
 #
