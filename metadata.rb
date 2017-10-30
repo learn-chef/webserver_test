@@ -1,7 +1,10 @@
 name 'webserver_test'
 maintainer 'The Authors'
 maintainer_email 'you@example.com'
-license 'all_rights'
+license 'All Rights Reserved'
 description 'Installs/Configures webserver_test'
 long_description 'Installs/Configures webserver_test'
 version '0.1.0'
+chef_version '>= 12.1' if respond_to?(:chef_version)
+issues_url 'https://github.com/learn-chef/webserver_test/issues'
+source_url 'https://github.com/learn-chef/webserver_test'
